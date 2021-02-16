@@ -1,0 +1,193 @@
+<html>
+    <head>
+    <title>eSports - Standings</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- JavaScript -->
+    <script src="js/bootstrap.min.js"></script> 
+    <!-- Google material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <style>
+        body {
+            background-color: #eef2f5 !important;
+        }
+    </style>
+ 
+    <body>
+        <div class="container-fluid sticky-top w-100">
+            <div class="row">
+                <div class="col-12 bg-dark">
+                    <nav class="navbar navbar-default navbar-fixed-top sticky-top bg-dark shadow">
+                        <a class="ml-5 mr-3" href="index.html"><img style="height: 24px;" src="img/logo-purple.png"></a>
+                        <nav class="mr-auto d-none d-md-block">
+                            <a class="px-2 text-white" href="culture.html">Culture</a>
+                            <a class="px-2 text-white" href="videos.html">Videos</a>
+                            <a class="px-2 text-white" href="game_news.html">LoL</a>
+                            <a class="px-2 text-white" href="game_news.html">CSGO</a>
+                            <a class="px-2 text-white" href="game_news.html">Dota2</a>
+                            <a class="px-2 text-white" href="game_news.html">Overwatch</a>
+                        </nav>
+                        <nav class="mr-5 d-none d-md-block">
+                            <a class="px-2 text-white" href="signup.html">Sign up</a>
+                            <a class="px-2 text-white" href="login.html">Log in</a>
+                        </nav>
+                        <nav class="d-block d-md-none">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">menu</i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="culture.html">Culture</a>
+                                    <a class="dropdown-item" href="videos.html">Videos</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="game_news.html">LoL</a>
+                                    <a class="dropdown-item" href="game_news.html">CSGO</a>
+                                    <a class="dropdown-item" href="game_news.html">Dota2</a>
+                                    <a class="dropdown-item" href="game_news.html">Overwatch</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="signup.html">Sign up</a>
+                                    <a class="dropdown-item" href="login.html">Log in</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </nav>
+                </div>
+                <div class="col-12 bg-white shadow d-none d-sm-block">
+                    <nav class="navbar navbar-default bg-white">
+                        <nav class="ml-5 ">
+                            <a class="px-2 text-muted" href="scores.html">Scores</a>
+                            <a class="px-2 text-dark font-weight-bold" href="standings.html">Standings</a>
+                            <a class="px-2 text-muted" href="game_news.html">News</a>
+                            <a class="px-2 text-muted" href="guides.html">Guides</a>
+                            <a class="px-2 text-muted" href="game_videos.html">Videos</a>
+                            <a class="px-2 text-muted" href="livestreams.html">Livestreams</a>
+                        </nav>
+                    </nav>
+                </div>
+                <div class="col-12 bg-white shadow d-block d-sm-none">
+                    <a class="d-block d-md-inline px-2 text-dark font-weight-bold text-center w-100 dropdown-toggle" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Standings
+                    </a>
+                    <div class="collapse" id="collapseExample">
+                        <nav class="ml-5 ">
+                            <a class="d-block d-md-inline px-2 text-muted" href="scores.html">Scores</a>
+                            <a class="d-block d-md-inline px-2 text-dark font-weight-bold" href="standings.html">Standings</a>
+                            <a class="d-block d-md-inline px-2 text-muted" href="game_news.html">News</a>
+                            <a class="d-block d-md-inline px-2 text-muted" href="guides.html">Guides</a>
+                            <a class="d-block d-md-inline px-2 text-muted" href="game_videos.html">Videos</a>
+                            <a class="d-block d-md-inline px-2 text-muted" href="livestreams.html">Livestreams</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="container pt-2 border pb-3 mb-3 bg-white">
+            <h2>Standings</h2><hr>
+            <div class="row">
+                <div class="form-group col-12">
+                    <label for="exampleFormControlSelect1">Select the league</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>MSI - Mid-Season Invitational</option>
+                        <option>LCS - LoL Championship Series</option>
+                        <option>LEC - LoL European Championship</option>
+                        <option>LCK - LoL Championship Korea</option>
+                        <option>LPL - LoL Pro League</option>
+                        <option>LMS - LoL Master Series</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <table class="table table-bordered table-striped col-12">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Team</th>
+                            <th scope="col">Win-Lose</th>
+                            <th scope="col">Last 5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Team Liquid</td>
+                            <td>14-4</td>
+                            <td>2-3</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Cloud9</td>
+                            <td>14-4</td>
+                            <td>4-1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Team SoloMid</td>
+                            <td>13-5</td>
+                            <td>5-0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>FlyQuest</td>
+                            <td>10-9</td>
+                            <td>3-1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Golden Guardians</td>
+                            <td>9-10</td>
+                            <td>3-2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Echo Fox</td>
+                            <td>8-10</td>
+                            <td>4-1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Counter Logic Gaming</td>
+                            <td>7-11</td>
+                            <td>2-3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark pb-5 pt-4 px-5">
+            <div class="m-auto row text-white">
+                <div class="col-sm-12 col-md-4">
+                    <h6>TOP ESPORTS</h6><hr style="border-color: white;">
+                    <ul class="list-unstyled">
+                        <li><a class="text-white" href="game_news.html">LoL</a></li>
+                        <li><a class="text-white" href="game_news.html">CS:GO</a></li>
+                        <li><a class="text-white" href="game_news.html">Dota2</a></li>
+                        <li><a class="text-white" href="game_news.html">Overwatch</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <h6>COMPANY</h6><hr style="border-color: white;">
+                    <ul class="list-unstyled">
+                        <li><a class="text-white" href="privacy_policy.html">Privacy policy</a></li>
+                        <li><a class="text-white" href="contact.html">Contact us</a></li>
+                        <li><a class="text-white" href="about.html">About us</a></li>
+                        <li><a class="text-white" href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <h6>FOLLOW US</h6><hr style="border-color: white !important;">
+                    <ul class="list-unstyled">
+                        <li><a class="text-white" href="https://twitter.com/necabadnjar">Twitter</a></li>
+                        <li><a class="text-white" href="https://facebook.com/badnja">Facebook</a></li>
+                        <li><a class="text-white" href="https://instagram.com/badnja">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
