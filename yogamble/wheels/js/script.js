@@ -7,9 +7,7 @@
   startButton.addEventListener('click', () => {
     startButton.style.pointerEvents = 'none';
     deg = Math.floor(2500 + Math.random() * 2500);
-    console.log(cnt%2==0);
-    deg = deg - deg%30;
-    console.log(deg);
+    deg = deg - deg%60;
     wheel.style.transition = 'all 5s ease-out';
     wheel.style.transform = `rotate(${deg}deg)`;
     ++cnt;
@@ -32,9 +30,7 @@
   startButton.addEventListener('click', () => {
     startButton.style.pointerEvents = 'none';
     deg = Math.floor(2500 + Math.random() * 2500);
-    console.log(cnt%2==0);
-    deg = deg - deg%30;
-    console.log(deg);
+    deg = deg - deg%60;
     wheel.style.transition = 'all 5s ease-out';
     wheel.style.transform = `rotate(${deg}deg)`;
     ++cnt;
@@ -57,9 +53,7 @@
   startButton.addEventListener('click', () => {
     startButton.style.pointerEvents = 'none';
     deg = Math.floor(2500 + Math.random() * 2500);
-    console.log(cnt%2==0);
-    deg = deg - deg%30;
-    console.log(deg);
+    deg = deg - deg%60;
     wheel.style.transition = 'all 5s ease-out';
     wheel.style.transform = `rotate(${deg}deg)`;
     ++cnt;
