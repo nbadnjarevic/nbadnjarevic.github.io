@@ -1,0 +1,32 @@
+body {
+  background-color:#bee3f6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.left{
+position:absolute;
+left:70px;
+}
+
+.right{
+position:absolute;
+right:70px;
+}
+
+#marker {
+  position: absolute; 
+  margin-left: 35%; 
+  margin-top: -5%;
+}
+
+#wheel, #wheelLeft, #wheelRight {
+  position: relative; 
+  z-index: -1; 
+  width:100%;
+}
+
+#button, #buttonLeft, #buttonRight {
+  margin-top: 10px; 
+  width:100%;
+}
