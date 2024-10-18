@@ -1,4 +1,4 @@
 [playlist]
-File1=altons.mp3
-Title1=altons
+File1=https://nbadnjarevic.github.io/highrise/altons.mp3
 NumberOfEntries=1
+Version=2
