@@ -1,4 +1,4 @@
 [playlist]
-File1=https://nbadnjarevic.github.io/highrise/altons.mp3
-Title1=Altons theme song
+File1=altons.mp3
+Title1=altons
 NumberOfEntries=1
